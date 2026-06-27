@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap');
+/* ===============================
+   Base / Reset / Variables
+================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  /* ===================== COLORS ===================== */
+  --dark: #000E38;
+  --blue: #3F186A;
+  --orange: #FFCC81;
+  --orange-dark: #E9C79F;
+  --navy-dark: #010E39;
+  --primary-blue: #0344A2;
+  --white-color: #FFFFFF;
+  --purple-dark: #755797;
+  --purple-main: #9B4DF0;
+ 
+
+  /* ===================== FONTS ===================== */
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Oxanium", sans-serif;
+  --font-Archivo: "Archivo", sans-serif;
+
+  /* ===================== BORDER RADIUS ===================== */
+  --radius-sm: 8px;
+  --radius-md: 40px;
+  --radius-lg: 23px;
+
+  /* ===================== TYPOGRAPHY ===================== */
+  /* 1rem = 16px */
+
+  /* Headings */
+  --fs-h1: clamp(2rem, 5vw, 4.5rem);   
+  /* 2rem = 32px | 4.5rem = 72px */
+
+  --fs-h2: clamp(1.75rem, 4.5vw, 4rem); 
+  /* 1.75rem = 28px | 4rem = 64px */
+
+  --fs-h3: clamp(1.5rem, 3.5vw, 3.125rem); 
+  /* 1.5rem = 24px | 2.25rem = 36px */
+
+  --fs-h4: clamp(1.375rem, 3vw, 2.5rem); 
+  /* 1.375rem = 22px | 2.5rem = 40px */
+
+  --fs-text-h5: clamp(1rem, 2vw, 3rem);  /* 16px min, 48px max */
+
+  --fs-h5: clamp(1.25rem, 2.5vw, 1.875rem); 
+  /* 1.25rem = 20px | 1.875rem = 30px */
+
+  --fs-h6: clamp(2rem, 5vw, 3.5rem); 
+  /* 2rem = 32px | 3.5rem = 56px */
+  --fs-text-32: clamp(2rem, 3vw, 2rem);
+
+  /* Paragraph / Text */
+--fs-text-lg: clamp(1.125rem, 2vw, 1.625rem);
+/* 1.125rem = 18px min | 2vw preferred | 1.625rem = 26px max */
+
+  --fs-text-md: clamp(1rem, 1.8vw, 1.125rem);
+  /* 1rem = 16px | 1.125rem = 18px */
+
+  --fs-text-ex: clamp(1rem, 2vw, 1.25rem);
+  /* 1rem = 16px | 1.25rem = 20px */
+
+  --fs-text-sm: clamp(0.875rem, 1.5vw, 1rem);
+  /* 0.875rem = 14px | 1rem = 16px */
+
+--fs-text-m-lg: clamp(0.75rem, 1.2vw, 1.125rem);
+/* 0.75rem = 12px min | 1.125rem = 18px max */
+
+  --fs-text-m: clamp(0.75rem, 1.2vw, 0.875rem);
+  /* 0.75rem = 12px | 0.875rem = 14px */
+  --fs-text-m-xl: clamp(0.75rem, 1.2vw, 1.625rem);
+/* 0.75rem = 12px min | scales with 1.2vw | max 26px */
+
+}
+/* ================= HEADINGS ================= */
+h1 { font-size: var(--fs-h1); font-weight: 700; line-height: 1.2; }
+h2 { font-size: var(--fs-h2); font-weight: 700; line-height: 1.25; }
+h3 { font-size: var(--fs-h3); font-weight: 600; line-height: 1.3; }
+h4 { font-size: var(--fs-h4); font-weight: 700; line-height: 1.3; }
+h5 { font-size: var(--fs-h5); font-weight: 500; line-height: 1.3; }
+h6 { font-size: var(--fs-text-32); font-weight: 700; line-height: 1.3; }
+
+/* ================= PARAGRAPH / TEXT ================= */
+p { font-size: var(--fs-text-md); line-height: 1.6; }
+span { font-size: var(--fs-text-m); }
+
+/* Optional: Utility classes for text sizes */
+.text-lg { font-size: var(--fs-text-lg); }
+.text-md { font-size: var(--ffs-text-m); }
+.text-ex { font-size: var(--fs-text-ex); font-weight: 700; }
+.text-sm { font-size: var(--fs-text-sm); font-weight: 300; }
+.text-m { font-size: var(--fs-text-m-xl); font-weight: 300; }
+.text-h5 { font-size: var(--fs-text-h5); font-weight: 500; }
+.text-m-lg {
+  font-size: var(--fs-text-m-lg);
+}
+
+body{
+    font-family: var(--font-primary);
+}

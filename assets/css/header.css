@@ -1,0 +1,84 @@
+/* ===================== STICKY HEADER ===================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* Header Inner */
+.site-header .container{
+  width: 100%;
+  max-width: 111.25rem;  /* 1780px / 16 = 111.25rem */
+  margin: 0 auto;
+  padding: 0 0.9375rem;  /* 15px side padding */
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0;
+}
+.site-header.is-sticky .header-inner{
+   padding: 15px 0;
+}
+.site-header.is-sticky {
+    background: var(--dark);
+}
+/* Logo */
+.logo img {
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+.site-header.is-sticky img.logo-img {
+    position: inherit;
+    width: 86px;
+}
+
+/* Button Default (Before Scroll) */
+.header-btn {
+  padding: 12px 26px;
+  border-radius: 50px;
+  border: none;
+
+  background: transparent;
+  color: var(--white-color);
+  font-size: var(--fs-text-m);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ===================== STICKY STATE ===================== */
+.site-header.is-sticky {
+  background: var(--white-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Button Change On Sticky */
+.site-header.is-sticky .header-btn {
+  background: var(--grad-purple);
+  color: var(--white-color);
+}
+.site-header.is-sticky {
+  background: #000E38;
+  background: linear-gradient(90deg,rgba(0, 14, 56, 1) 0%, rgba(63, 24, 106, 1) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Button Change On Sticky */
+.site-header.is-sticky .header-btn {
+  background: var(--grad-purple);
+  color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  main{
+      padding-top: 50px;
+  }
+}
