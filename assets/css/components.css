@@ -787,7 +787,7 @@ main {
 
 /* What Makes This Exhibition a Must-Visit */
 .exhibition-section {
-  background: url('/assets/images/BG.jpg') no-repeat center center/cover;
+  background: url('../assets/images/BG.jpg') no-repeat center center/cover;
   padding: 60px 0px;
   background-color: #f9f9f9;
 }
