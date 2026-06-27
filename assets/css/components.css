@@ -776,7 +776,7 @@ main {
 
 @media (max-width: 768px) {
   .appointment-section {
-    background: url('/assets/images/appoiment-mobile-bg.jpg') no-repeat center center/cover;
+    background: url('../images/appoiment-mobile-bg.jpg') no-repeat center center/cover;
     padding: 57px 0px 269px;
   }
 
@@ -787,7 +787,7 @@ main {
 
 /* What Makes This Exhibition a Must-Visit */
 .exhibition-section {
-  background: url('../assets/images/BG.jpg') no-repeat center center/cover;
+  background: url('../images/BG.jpg') no-repeat center center/cover;
   padding: 60px 0px;
   background-color: #f9f9f9;
 }
