@@ -693,7 +693,7 @@ main {
 
 /* Pre-schedule Your School Appointments */
 .appointment-section {
-  background: url('/assets/images/Appointments-bg.jpg') no-repeat center center/cover;
+  background: url('../images/Appointments-bg.jpg') no-repeat center center/cover;
   padding: 173px 20px;
 }
 
